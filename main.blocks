@@ -1,0 +1,81 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="kcOFEuy{J%)rq[yl3*Z6">mySprite</variable><variable id="{t@?,/^$i@R4{7c=W8|H">mySprite2</variable><variable type="KIND_SpriteKind" id=")tS@np;Jg7i,hc4w#xX?">Player</variable><variable type="KIND_SpriteKind" id="1Ro6+I1*y4{)gbi_Df;P">Projectile</variable><variable type="KIND_SpriteKind" id="a|JBriqj=j%_Ap2P6Fz:">Food</variable><variable type="KIND_SpriteKind" id="B1^y!Iih4nKke2:U*dJs">Enemy</variable><variable type="KIND_SpriteKind" id="Iy+cMR~zUEXg*sGN`h5|">CUT1S1</variable><variable type="KIND_SpriteKind" id="@BBwPQF1ke00N8zIt`9.">CUT1S2</variable></variables><block type="function_definition" x="0" y="16"><mutation name="Intro" functionid="r[r)$kHJTB.%jqBX|HEL"/><field name="function_name">Intro</field><statement name="STACK"><block type="variables_set"><field name="VAR" id="kcOFEuy{J%)rq[yl3*Z6">mySprite</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . d . . . 9 9 9 9 9 9 9 . . . . . . . . . . . . . . . . . . 
+. . . . . . . d . . 9 . . . . . . . 9 . . . . d . . . . . . . . . . . . 
+. . . . . . . d . 9 . . f f f f f f . 9 . . . d . . . . . . . . . . . . 
+. . . . . . . d . 9 . f f 1 1 1 1 f f 9 . . . d . . . . . . . . . . . . 
+. . . . . . . d . 9 . f 1 1 8 1 8 1 f 9 . . . d . . . . . . . . . . . . 
+. . . . . . . d . 9 . f 1 1 1 1 1 1 f 9 . . . d . . . . . . . . . . . . 
+. . . . . . . d . 9 . f 1 1 f f f 1 f 9 . . . d . . . . . . . . . . . . 
+. . . . . . . d . 9 . f f 1 1 1 1 f f 9 . . . d . . . . . . . . . . . . 
+. . . . . . . d . 9 . . f f f f f f . 9 . . . d . . . . . . . . . . . . 
+. . . . . . . d . . 9 . . . . f . . 9 . . . . d . . . . . . . . . . . . 
+. . . . . . . d d . . 9 9 9 9 9 9 9 . . . . d d . . . . . . . . . . . . 
+. . . . . . . . . d . . . . . f . . . . . d . . . . . . . . . . . . . . 
+. . . . . . . . . . d f f f f f f f f f d . . . . . . . . . . . . . . . 
+. . . . . . . . . . f . . . . f . . . . f . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . f . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . f . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . f f f f f . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . f . . . f . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . f f . . . f f . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . f . . . . . f . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . f . . . . . f . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . f . . . . . f . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . d d d d d d d d d d d . . . . . . . . . . . . . . . 
+. . . . . . . . . . d d d d d d d d d d d . . . . . . . . . . . . . . . 
+. . . . . . . . . . d d d d d d d d d d d . . . . . . . . . . . . . . . 
+. . . . . . . . . . d d d d d d d d d d d . . . . . . . . . . . . . . . 
+. . . . . . . . . . d d d d d d d d d d d . . . . . . . . . . . . . . . 
+. . . . . . . . . . d d d d d d d d d d d . . . . . . . . . . . . . . . 
+. . . . . . . . . . d d d d d d d d d d d . . . . . . . . . . . . . . . 
+. . . . . . . . . . d d d d d d d d d d d . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">CUT1S1</field></shadow></value></block></value><next><block type="variables_set"><field name="VAR" id="{t@?,/^$i@R4{7c=W8|H">mySprite2</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . f f f f f . . . . . . 
+. . . . . f f f f f . . . . . . 
+. . . . . f f f f f . . . . . . 
+. . . . . f f f f f . . . . . . 
+. . . . . f f f f f . . . . . . 
+. . . . . . . f . . . . . . . . 
+. . . . . . . f . . . . . . . . 
+. . . . . f f f f f . . . . . . 
+. . . . . . . f . . . . . . . . 
+. . . . . . . f . . . . . . . . 
+. . . . . . f f f . . . . . . . 
+. . . . . f f f f f . . . . . . 
+. . . . . f . . . f . . . . . . 
+. . . . . f . . . f . . . . . . 
+. . . . . f . . . f . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">CUT1S2</field></shadow></value></block></value><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="kcOFEuy{J%)rq[yl3*Z6">mySprite</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">30</field></shadow></value><value name="y"><shadow type="positionPicker"><field name="index">40</field></shadow></value><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="{t@?,/^$i@R4{7c=W8|H">mySprite2</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">49</field></shadow></value><value name="y"><shadow type="positionPicker"><field name="index">16</field></shadow></value><next><block type="spritesetsetflag"><field name="flag">SpriteFlag.StayInScreen</field><value name="sprite"><block type="variables_get"><field name="VAR" id="kcOFEuy{J%)rq[yl3*Z6">mySprite</field></block></value><value name="on"><shadow type="toggleOnOff"><field name="on">false</field></shadow></value><next><block type="gamesetbackgroundcolor"><value name="color"><shadow type="colorindexpicker"><field name="index">13</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></statement></block><block type="pxt-on-start" x="390" y="266"><statement name="HANDLER"><block type="game_dialog_set_frame"><value name="frame"><shadow type="dialog_image_picker"><field name="img">img`
+5 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 5 
+2 4 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 4 2 
+2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 
+2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 
+2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 
+2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 
+2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 
+2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 
+2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 
+2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 
+2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 
+2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 
+2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 
+2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 
+2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 
+2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 
+2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 
+2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 
+2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 
+2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 
+2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 
+2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 
+2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 
+2 4 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 4 2 
+5 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 5 
+`</field></shadow></value><next><block type="game_show_long_text"><field name="layout">DialogLayout.Bottom</field><value name="str"><shadow type="text"><field name="TEXT">. . .</field></shadow></value><next><block type="game_show_long_text"><field name="layout">DialogLayout.Bottom</field><value name="str"><shadow type="text"><field name="TEXT">The enemy is feirce</field></shadow></value><next><block type="game_show_long_text"><field name="layout">DialogLayout.Bottom</field><value name="str"><shadow type="text"><field name="TEXT">, Strong,</field></shadow></value><next><block type="game_show_long_text"><field name="layout">DialogLayout.Bottom</field><value name="str"><shadow type="text"><field name="TEXT"> and Indestructible..</field></shadow></value><next><block type="device_pause"><value name="pause"><shadow type="timePicker"><field name="ms">2000</field></shadow></value><next><block type="game_show_long_text"><field name="layout">DialogLayout.Bottom</field><value name="str"><shadow type="text"><field name="TEXT">But that is a legend..</field></shadow></value><next><block type="game_show_long_text"><field name="layout">DialogLayout.Bottom</field><value name="str"><shadow type="text"><field name="TEXT">A story.</field></shadow></value><next><block type="game_show_long_text"><field name="layout">DialogLayout.Bottom</field><value name="str"><shadow type="text"><field name="TEXT">But you..</field></shadow></value><next><block type="game_show_long_text"><field name="layout">DialogLayout.Bottom</field><value name="str"><shadow type="text"><field name="TEXT">Will not fall..</field></shadow></value><next><block type="function_call"><mutation name="Intro" functionid="r[r)$kHJTB.%jqBX|HEL"/></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block></xml>
